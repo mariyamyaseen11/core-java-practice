@@ -24,9 +24,9 @@ public class Datemerger {
 
 		List<DateRange> finalRangeList = mergeDates(list);
 		for (DateRange range : finalRangeList) {
-			System.out.println(range.getStartDate()+"-"+range.getEndDate());
+			//System.out.println(range.getStartDate()+"-"+range.getEndDate());
 			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MMM yyyy");
-			//System.out.println(range.getStartDate().format(formatter) + "-" + range.getEndDate().format(formatter));
+			System.out.println(range.getStartDate().format(formatter) + "-" + range.getEndDate().format(formatter));
 
 		}
 
